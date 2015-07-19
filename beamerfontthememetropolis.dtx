@@ -45,6 +45,19 @@
     \setsansfont[BoldFont={Fira Sans},%
                  Numbers={Monospaced}]{Fira Sans Light}%
     }
+\RequirePackage[slantfont, CJKnumber, boldfont]{xeCJK}
+
+\RequirePackage{fontspec}
+\RequirePackage{xunicode}
+\RequirePackage{xltxtra}
+\DeclareTextCommand{\nobreakspace}{T1}{\leavevmode\nobreak\ }
+
+\setCJKmainfont[BoldFont={STHeiti-Light},%
+                ItalicFont={STKaiti}]{STSong}
+\setCJKsansfont{STHeiti-Light}
+\setCJKmonofont{STFangsong}
+\punctstyle{kaiming}
+
 %    \end{macrocode}
 %
 % Font Assignment
